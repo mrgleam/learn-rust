@@ -301,6 +301,41 @@ Including 10 minute breaks, this session should take about 2 hours and 45 minute
 
 ---
 
+# Exercise: Geometry (1/2) 📐
+
+Create utility functions for 3-dimensional geometry, representing a point as `[f64; 3]`.
+
+### Magnitude
+Calculate the magnitude of a vector by summing the squares of its coordinates and taking the square root. Use the `sqrt()` method to calculate the square root, like `v.sqrt()`.
+
+```rust
+fn magnitude(v: &[f64; 3]) -> f64 {
+    todo!()
+}
+```
+
+---
+
+# Exercise: Geometry (2/2) 📐
+
+### Normalize
+Normalize a vector by calculating its magnitude and dividing all of its coordinates by that magnitude.
+
+```rust
+fn normalize(v: &mut [f64; 3]) {
+    todo!()
+}
+
+fn main() {
+    println!("Magnitude of unit vector: {}", magnitude(&[0.0, 1.0, 0.0]));
+    let mut v = [1.0, 2.0, 9.0];
+    normalize(&mut v);
+    println!("Magnitude of {v:?} after normalization: {}", magnitude(&v));
+}
+```
+
+---
+
 # Constants: `const` (1/3) 💎
 
 Constants are evaluated at compile time and their values are **inlined** wherever they are used.
