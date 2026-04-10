@@ -289,6 +289,18 @@ Rust allows flexible syntax for specifying values and types.
 
 ---
 
+# Welcome Back 👋
+
+Including 10 minute breaks, this session should take about 2 hours and 45 minutes. It contains:
+
+| Segment | Duration |
+| :--- | :--- |
+| **Tuples and Arrays** | 35 minutes |
+| **References** | 55 minutes |
+| **User-Defined Types** | 1 hour |
+
+---
+
 <!-- _class: lead -->
 
 # Thank You! 🦀
