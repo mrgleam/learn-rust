@@ -543,6 +543,30 @@ fn main() {
 
 ---
 
+# Variables: `static` 📌
+
+Static variables live for the entire duration of the program execution and have a fixed address in memory.
+
+```rust
+static BANNER: &str = "Welcome to RustOS 3.14";
+
+fn main() {
+    println!("{BANNER}");
+}
+```
+
+- ⏳ **Lifetime**: They are not destroyed until the program terminates.
+- 💾 **Memory**: They have a fixed memory location (not inlined like `const`).
+
+<!--
+Advanced usage and thread safety:
+- Thread Safety: Because they are globally accessible, they must implement Sync.
+- Interior Mutability: Possible through types like Mutex<T> or atomics.
+- Initialization: OnceLock is commonly used for safe, one-time initialization at runtime.
+- Thread-local: Use std::thread_local if you need data that is unique to each thread.
+-->
+
+---
 
 <!-- _class: lead -->
 
