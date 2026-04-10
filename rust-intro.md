@@ -301,6 +301,56 @@ Including 10 minute breaks, this session should take about 2 hours and 45 minute
 
 ---
 
+# Exercise: Array Transpose (1/2) 🔄
+
+Implement `transpose` to turn rows into columns.
+
+<div class="columns">
+<div>
+
+### Example
+```
+101 102 103    101 201 301
+201 202 203 -> 102 202 302
+301 302 303    103 203 303
+```
+
+</div>
+<div>
+
+```rust
+fn transpose(
+    matrix: [[i32; 3]; 3]
+) -> [[i32; 3]; 3] {
+    todo!()
+}
+```
+
+</div>
+</div>
+
+---
+
+# Exercise: Array Transpose (2/2) 🔄
+
+Test your implementation with the following `main` function:
+
+```rust
+fn main() {
+    let matrix = [
+        [101, 102, 103],
+        [201, 202, 203],
+        [301, 302, 303],
+    ];
+    let transposed = transpose(matrix);
+    for row in transposed {
+        println!("{row:?}");
+    }
+}
+```
+
+---
+
 # Exercise: Geometry (1/2) 📐
 
 Create utility functions for 3-dimensional geometry, representing a point as `[f64; 3]`.
