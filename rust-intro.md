@@ -242,6 +242,35 @@ This segment provides the foundational building blocks of Rust's type system.
 
 ---
 
+# Hello, World! 🌍
+
+The simplest possible Rust program:
+
+```rust
+fn main() {
+    println!("Hello 🌍!");
+}
+```
+
+- **`fn`**: Declares a function.
+- **`main`**: The program's entry point.
+- **`{ }`**: Braces delimit blocks of code.
+- **`;`**: Statements end with a semicolon.
+- **`println!`**: A **macro** (indicated by `!`) that prints text.
+
+---
+
+# Modern & Multi-paradigm 🧩
+
+Rust is designed to be modern and familiar.
+
+- 🌐 **Unicode Support**: Rust strings are UTF-8 encoded by default.
+- 🛠️ **Macros**: `println!` is a macro because it handles a variable number of arguments (Rust doesn't have function overloading).
+- 🤝 **Familiar Syntax**: Follows the C/C++/Java/Swift tradition.
+- 🏗️ **Multi-paradigm**: Powerful OOP features and functional concepts.
+
+---
+
 # Scalar Types: Integers 🔢
 
 Rust provides a rich set of integer types with explicit widths.
