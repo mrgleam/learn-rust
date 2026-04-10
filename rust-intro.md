@@ -1,5 +1,6 @@
 ---
 marp: true
+math: mathjax
 theme: gaia
 _class: lead
 paginate: true
@@ -286,6 +287,35 @@ Rust allows flexible syntax for specifying values and types.
   - `iN`/`uN`/`fN` are **N** bits wide.
   - `char` is always **4 bytes** (to handle all Unicode).
   - `bool` is **1 byte**.
+
+---
+
+# Exercise: Collatz Sequence (1/2) 🔄
+
+For an arbitrary $n$ greater than zero:
+- If $n$ is **1**, the sequence terminates.
+- If $n$ is **even**, the next value is $n / 2$.
+- If $n$ is **odd**, the next value is $3 * n + 1$.
+
+**Example (n = 3)**:
+$3 \to 10 \to 5 \to 16 \to 8 \to 4 \to 2 \to 1$ (Length: 8)
+
+---
+
+# Exercise: Collatz Sequence (2/2) 🔄
+
+Write a function to calculate the length of the Collatz sequence for a given `n`.
+
+```rust
+/// Determine the length of the collatz sequence beginning at `n`.
+fn collatz_length(mut n: i32) -> u32 {
+    todo!("Implement this")
+}
+
+fn main() {
+    println!("Length: {}", collatz_length(11)); // should be 15
+}
+```
 
 ---
 
