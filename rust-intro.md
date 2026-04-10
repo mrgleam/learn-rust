@@ -290,6 +290,57 @@ Rust allows flexible syntax for specifying values and types.
 
 ---
 
+# Exercise: Fibonacci (1/3) 🔄
+
+The Fibonacci sequence begins with **0, 1**. For $n > 1$, the next number is the sum of the previous two ($F_n = F_{n-1} + F_{n-2}$).
+
+- F(0) = 0
+- F(1) = 1
+- F(2) = 1
+- F(3) = 2
+- F(4) = 3
+- ...
+
+---
+
+# Exercise: Fibonacci (2/3) 🔄
+
+Write a function `fib(n)` that calculates the nth Fibonacci number. 
+
+```rust
+fn fib(n: u32) -> u32 {
+    if n < 2 {
+        // The base case.
+        return todo!("Implement this");
+    } else {
+        // The recursive case.
+        return todo!("Implement this");
+    }
+}
+```
+
+---
+
+# Exercise: Fibonacci (3/3) 🔄
+
+Test your implementation with `main`:
+
+```rust
+fn main() {
+    let n = 20;
+    println!("fib({n}) = {}", fib(n));
+}
+```
+
+<!--
+- This exercise is a classic introduction to recursion.
+- Encourage students to think about the base cases and the recursive step.
+- The question “When will this function panic?” is a hint to think about integer overflow. The Fibonacci sequence grows quickly!
+- Students might come up with an iterative solution as well, which is a great opportunity to discuss the trade-offs between recursion and iteration (e.g., performance, stack overflow for deep recursion).
+-->
+
+---
+
 # Exercise: Collatz Sequence (1/2) 🔄
 
 For an arbitrary $n$ greater than zero:
