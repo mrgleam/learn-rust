@@ -205,6 +205,54 @@ This segment provides the foundational building blocks of Rust's type system.
 
 ---
 
+# Scalar Types: Integers 🔢
+
+Rust provides a rich set of integer types with explicit widths.
+
+<div class="columns">
+<div>
+
+### Signed (`i`)
+- `i8`, `i16`, `i32`, `i64`, `i128`
+- `isize` (pointer width)
+
+</div>
+<div>
+
+### Unsigned (`u`)
+- `u8`, `u16`, `u32`, `u64`, `u128`
+- `usize` (pointer width)
+
+</div>
+</div>
+
+> `isize` and `usize` depend on the architecture (e.g., 64-bit on a modern Mac/PC).
+
+---
+
+# Scalar Types: Float, Char, Bool
+
+Beyond integers, Rust handles decimals and logic with precision.
+
+- 📏 **Floating-Point**: `f32` (single precision) and `f64` (double precision).
+- 🔠 **Characters**: `char` is **32 bits wide** (Unicode scalar value).
+- ✅ **Boolean**: `bool` takes `true` or `false` (**8 bits wide**).
+
+---
+
+# Literal Syntax & Widths
+
+Rust allows flexible syntax for specifying values and types.
+
+- 💎 **Legibility**: Use underscores for large numbers: `1_000_000`.
+- 🏷️ **Type Suffixes**: Explicitly type literals: `123_u32` or `3.14_f32`.
+- 📐 **Bit Widths**:
+  - `iN`/`uN`/`fN` are **N** bits wide.
+  - `char` is always **4 bytes** (to handle all Unicode).
+  - `bool` is **1 byte**.
+
+---
+
 <!-- _class: lead -->
 
 # Thank You! 🦀
