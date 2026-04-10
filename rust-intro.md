@@ -34,6 +34,42 @@ style: |
 
 ---
 
+# Welcome to Day 1 🦀
+### Rust Fundamentals
+
+Today we cover a broad range of topics to build your foundation:
+
+- **Basic Syntax**: Variables, types, enums, structs, references.
+- **Functions & Methods**: How to structure logic.
+- **Type Inference**: Let the compiler do the work.
+- **Control Flow**: Loops, conditionals, and pattern matching.
+- **User-Defined Types**: Structs and Enums in depth.
+
+---
+
+# Interactive Learning 💬
+
+This course is designed to be interactive!
+
+- **Ask Questions**: Ask them as they arise, don't wait until the end.
+- **Discuss**: Share how Rust compares to languages you already know.
+- **Hands-on**: We have exercises at the end of each segment.
+
+---
+
+# Schedule
+
+Including 10 minute breaks, this session should take about 2 hours and 10 minutes. It contains:
+
+| Segment | Duration |
+| :--- | :--- |
+| **Welcome** | 5 minutes |
+| **Hello, World** | 15 minutes |
+| **Types and Values** | 40 minutes |
+| **Control Flow Basics** | 45 minutes |
+
+---
+
 # What is Rust?
 
 Rust is a relatively new programming language that had its **1.0 release in 2015**.
