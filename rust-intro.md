@@ -568,6 +568,44 @@ Advanced usage and thread safety:
 
 ---
 
+# Exercise: Elevator Events (1/2) 🔄
+
+Create a data structure to represent an event in an elevator control system. 
+
+**Requirements**:
+- Define `Event` and `Direction` enums.
+- Use `#[derive(Debug)]` for formatting.
+- Implement constructor functions for various events.
+- Ensure the `main` function runs without errors.
+
+---
+
+# Exercise: Elevator Events (2/2) 🔄
+
+```rust
+#[derive(Debug)]
+enum Event { /* TODO */ }
+
+#[derive(Debug)]
+enum Direction { Up, Down }
+
+fn car_arrived(floor: i32) -> Event { todo!() }
+fn car_door_opened() -> Event { todo!() }
+fn car_door_closed() -> Event { todo!() }
+fn lobby_call_button_pressed(floor: i32, dir: Direction) -> Event { todo!() }
+fn car_floor_button_pressed(floor: i32) -> Event { todo!() }
+
+fn main() {
+    println!("Lobby call: {:?}", lobby_call_button_pressed(0, Direction::Up));
+    println!("Car arrived: {:?}", car_arrived(0));
+    println!("Door opened: {:?}", car_door_opened());
+    println!("Floor press: {:?}", car_floor_button_pressed(3));
+    println!("Door closed: {:?}", car_door_closed());
+}
+```
+
+---
+
 <!-- _class: lead -->
 
 # Thank You! 🦀
