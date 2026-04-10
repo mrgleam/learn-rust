@@ -301,6 +301,54 @@ Including 10 minute breaks, this session should take about 2 hours and 45 minute
 
 ---
 
+# Constants: `const` (1/3) 💎
+
+Constants are evaluated at compile time and their values are **inlined** wherever they are used.
+
+- 🏗️ **Compile-time**: Evaluated when you build your program.
+- 📂 **Inlined**: The value is copied into every place it's referenced.
+- ⚙️ **`const fn`**: Functions marked `const` can be called at compile time.
+- 🔄 **Runtime**: `const fn` can also be used like regular functions at runtime.
+
+---
+
+# Constants: `const` (2/3) 💎
+
+Constants can be initialized with results from `const fn`.
+
+```rust
+const DIGEST_SIZE: usize = 3;
+const FILL_VALUE: u8 = calculate_fill_value();
+
+const fn calculate_fill_value() -> u8 {
+    if DIGEST_SIZE < 10 { 42 } else { 13 }
+}
+```
+
+---
+
+# Constants: `const` (3/3) 💎
+
+Constants are often used for fixed-size arrays and global configuration.
+
+```rust
+fn compute_digest(text: &str) -> [u8; DIGEST_SIZE] {
+    let mut digest = [FILL_VALUE; DIGEST_SIZE];
+    for (idx, &b) in text.as_bytes().iter().enumerate() {
+        digest[idx % DIGEST_SIZE] = digest[idx % DIGEST_SIZE].wrapping_add(b);
+    }
+    digest
+}
+
+fn main() {
+    let digest = compute_digest("Hello world");
+    println!("digest: {digest:?}");
+}
+```
+
+---
+
+
 <!-- _class: lead -->
 
 # Thank You! 🦀
