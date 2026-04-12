@@ -13,6 +13,7 @@ style: |
   }
   h1, h2 {
     color: #ff9d00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
   footer {
     color: #888;
@@ -27,7 +28,7 @@ style: |
   }
 ---
 
-![bg blur:2px opacity:40%](assets/rust_cover.png)
+![bg brightness:0.7](assets/rust_uncle_cover.png)
 
 # **What is Rust?**
 ### A modern systems programming language
