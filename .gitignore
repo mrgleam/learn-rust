@@ -3,6 +3,7 @@ dist/
 *.pdf
 *.html
 *.pptx
+*target/
 
 # Marp temporary files
 .marp/
