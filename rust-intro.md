@@ -569,6 +569,76 @@ Advanced usage and thread safety:
 
 ---
 
+# Exercise: ATM Events (1/3) 🔄
+
+Create a data structure to represent an event in a simple Automated Teller Machine (ATM) system.
+
+**Requirements**:
+- Define the `Event` enum.
+- Use `#[derive(Debug)]` for formatting.
+- Implement constructor functions for various ATM events.
+- Ensure the `main` function runs without errors.
+
+---
+
+# Exercise: ATM Events (2/3) 🔄
+
+```rust
+#[derive(Debug)]
+enum Event { /* TODO */ }
+
+fn insert_card() -> Event { todo!() }
+fn enter_pin(pin: u16) -> Event { todo!() }
+fn request_withdrawal(amount: u32) -> Event { todo!() }
+fn eject_card() -> Event { todo!() }
+
+fn main() {
+    println!("Card event: {:?}", insert_card());
+    println!("PIN event: {:?}", enter_pin(1234));
+    println!("Withdrawal event: {:?}", request_withdrawal(100));
+    println!("Eject event: {:?}", eject_card());
+}
+```
+
+---
+
+# Exercise: ATM Events (3/3) - Solution 💡
+
+```rust
+#[derive(Debug)]
+enum Event {
+    CardInserted,
+    PinEntered(u16),
+    WithdrawalRequested(u32),
+    CardEjected,
+}
+
+fn insert_card() -> Event {
+    Event::CardInserted
+}
+
+fn enter_pin(pin: u16) -> Event {
+    Event::PinEntered(pin)
+}
+
+fn request_withdrawal(amount: u32) -> Event {
+    Event::WithdrawalRequested(amount)
+}
+
+fn eject_card() -> Event {
+    Event::CardEjected
+}
+
+fn main() {
+    println!("Card event: {:?}", insert_card());
+    println!("PIN event: {:?}", enter_pin(1234));
+    println!("Withdrawal event: {:?}", request_withdrawal(100));
+    println!("Eject event: {:?}", eject_card());
+}
+```
+
+---
+
 # Exercise: Elevator Events (1/2) 🔄
 
 Create a data structure to represent an event in an elevator control system. 
