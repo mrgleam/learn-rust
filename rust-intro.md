@@ -28,7 +28,7 @@ style: |
   }
 ---
 
-![bg brightness:0.7](assets/rust_uncle_cover.png)
+![bg brightness:0.2](assets/cover.png)
 
 # **What is Rust?**
 ### A modern systems programming language
